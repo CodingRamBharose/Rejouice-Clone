@@ -1,0 +1,570 @@
+@font-face {
+    font-family: NbInternational;
+    src: url(./resource/NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: RejouiceHeading;
+    src: url(./resource/Rejouice-Headline.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "NbInternational";
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.614);
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.cursor h4{
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+#page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    z-index: 9;
+}
+.page1-content #header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.9vw 2.7vw;
+}
+.page1-content #venture, .page1-content h3{
+    color: #fff;
+    font-size: 1.39vw;
+    font-weight: 200;
+    cursor: pointer;
+}
+.page1-content h1{
+    padding: 0;
+    margin: 0;
+    font-size: 26.7vw;
+    color: #FFFCF1;
+    font-weight: 300;
+    font-family: "RejouiceHeading";
+    line-height: 26.7vw;
+    cursor: default;
+}
+.page1-content h1 span{
+    /* font-size: ; */
+    font-family: "RejouiceHeading";
+    display: inline-block;
+}
+#Menubar{
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    background-color: #EDECE7;
+    color: #111;
+    top: 0;
+    top: -70%;
+    left: 0;
+    z-index: 99;
+    padding: 2.9vw 2.7vw 0.8vw 2.7vw;
+}
+
+#Menubar h3{
+    color: #111;
+    position: absolute;
+    cursor: pointer;
+    top: 2.9vw;
+    right: 2.7vw;
+}
+
+.menu-top{
+    display: flex;
+    height: 90%;
+}
+#menu-top-left{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+#menu-top-left h4{
+    font-size: 1.7vw;
+    font-family: 'RejouiceHeading';
+    font-weight: 400;
+}
+#menu-top-left h5{
+ z-index: 100;
+ width: 100%;
+}
+#menu-top-left #video{
+    width: 300px;
+    height: 200px;
+}
+#menu-top-left video{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover; 
+}
+
+#menu-top-right{
+    display: flex;
+    padding-top: 1.5vw;
+    width: 40%;
+    flex-direction: column;
+    list-style: none;
+}
+
+#menu-top-right li a{
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    color: #111 !important;
+}
+
+.seat-btn{
+width: fit-content;
+padding: 12px 20px;
+margin-top: 12px;
+border-radius: 22px;
+font-size: 1.2vw;
+margin-left: 15px;
+}
+.seta-btn1{
+    color: #111;
+    border: 1px solid #111;
+}
+
+.menu-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+hr{
+    background-color: #111;
+    width: 100%;
+    height: 1px;
+    border: 0px solid #111;
+}
+#menu-bottom-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+#menu-bottom-info div{
+    display: flex;
+    gap: 1vw;
+
+}
+.menu-bottom div h5{
+    font-weight: 200;
+    font-size: 15px;
+
+}
+.playreel{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}
+.playreel div{
+    color: #111;
+    gap: 5px;
+    display: flex;
+}
+.playreel div h5{
+    font-weight: 200;
+}
+.playreel #reeltime{
+    font-weight: 200;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #FAF8F3;
+    z-index: 10;    
+}
+#page2 .page2-content{
+    padding: 4.8vw 2.7vw 0.8vw 2.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+
+}
+.page2-content div{
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+.page2-content span{
+    font-size: 1.65vw;
+}
+.page2-content hr{
+    height: 0.5px;
+}
+.page2-content p{
+    font-size: 4vw;
+}
+
+
+/* page3 css start here */
+#page3{
+    width: 100%;
+    height: 80vh;
+    background-color: #FAF8F3;
+    position: relative;
+    z-index: 10;
+}
+#page3 .page3-content{
+    padding: 0vw 2.7vw 0.8vw 2.7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.page3-content div{
+    display: flex;
+    gap: 10px;
+}
+.page3-content div #models-btn{
+    background-color: #111;
+    color: #fff;
+    font-weight: 200;
+    padding: 4px 8px;
+    font-size: 0.7vw;
+    border-radius: 10px;
+}
+
+.page3-content a{
+    color: #111;
+    font-size: 4.5vw;
+}
+/* page3 css end here */
+
+/* page4 css start here */
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #FAF8F3;
+    z-index: 10;
+}
+#page4 .page4-content{
+    padding: 2.9vw 2.7vw 0.8vw 2.7vw;
+    display: flex;
+    flex-direction: column;
+}
+.page4-content #work{
+    display: flex;
+    justify-content: space-between;
+}
+.page4-content #work h3{
+    font-weight: 400;
+    font-size: 1.6vw;
+}
+.page4-content #work a{
+    color: #111;
+    font-size: 1.6vw;
+}
+.brands{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.brand{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.brand video{
+    width: 100%;
+    
+}
+.brand .brand-img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.brand .brand-img:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+.brand .brand-logo{
+    position: absolute;
+    z-index: 11;
+    bottom: 5vw;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30px;
+}
+/* page4 css end here */
+
+/* page5 css start here */
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #FAF8F3;
+    position: relative;
+}
+.page5-content{
+    padding: 2.9vw 2.7vw 0.8vw 2.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.page5-content span{
+    font-size: 1.65vw;
+}
+.page5-content p{
+    font-size: 4vw;
+}
+/* page5 css end here */
+
+/* page6 css start here */
+#page6{
+    max-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #FAF8F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.9vw 2.7vw 0.8vw 2.7vw;
+}
+
+#page6 video{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page6 svg{
+    position: absolute;
+    width: 30%;
+}
+/* page6 css end here */
+
+/* page7 css start here */
+#page7{
+    height: 100vh;
+    width: 100%;
+    background-color: #FAF8F3;
+    position: relative;
+}
+.page7-content{
+    padding: 2.9vw 2.7vw 0.8vw 2.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.page7-content span{
+    font-size: 1.65vw;
+}
+.page7-content p{
+    font-size: 4.5vw;
+}
+/* page7 css end here */
+
+/* page8 css start here */
+#page8{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    background-color: #FAF8F3;
+}
+.page8-content{
+    padding: 2.9vw 2.7vw 0.8vw 2.7vw;
+
+}
+.page8-content .getintouch{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #111;
+    padding-bottom: 1vw;
+}
+.page8-content h1{
+    font-size: 10vw;
+    font-weight: 400;
+    font-family: "RejouiceHeading";
+}
+.page8-content .getintouch a{
+    color: #111;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+  }
+
+  .swiper-wrapper{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    background: transparent;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+/* page8 css end here */
+
+/* page9 css start here */
+#page9{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    background-color: #FAF8F3;
+}
+.page9-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15vw;
+}
+#page9-content-top{
+    padding: 4vw 2.7vw 0.8vw 2.7vw;
+}
+#page9-content-top h4{
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#page9-content-top a{
+    font-size: 5vw;
+    color: #111;
+}
+.page9-content .footer{
+    padding: 2.9vw 2.7vw 0.8vw 2.7vw;
+    background-color: black;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    color: #fff;
+}
+
+.footer .top1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .top1 .right1{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.top1 .right1 h3{
+    font-weight: 300;
+    font-size: 2vw;
+}
+.right1 .seat-btn2{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.left1{
+    display: flex;
+    gap: 5vw;
+}
+.left1 ul{
+    list-style: none;
+}
+.left1 ul li a{
+    font-weight: 300;
+    color: #fff;
+    list-style: none;
+}
+.left1 .menu-bottom-sm{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.left1 .menu-bottom-sm i, .left1 .menu-bottom-sm h5{
+    font-weight: 300;
+}
+
+.middle1{
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.right1 h4{
+    font-weight: 300;
+}
+.left1 a{
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer h1{
+    font-size: 26.7vw;
+    color: #FFFCF1;
+    font-weight: 300;
+    font-family: "RejouiceHeading";
+    line-height: 22vw;
+    cursor: default;}
+
+.footer h1 span{
+    font-family: "RejouiceHeading";
+}
+/* page9 css end here */
+
